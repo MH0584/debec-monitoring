@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.monitoring.daily.system</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/minhyo.kim/Downloads/monitoring/ssh-mornitoring/run_with_email.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>2</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/minhyo.kim/Downloads/monitoring/ssh-mornitoring/cron.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/minhyo.kim/Downloads/monitoring/ssh-mornitoring/cron.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/minhyo.kim/Downloads/monitoring/ssh-mornitoring</string>
+    <key>UserName</key>
+    <string>minhyo.kim</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/minhyo.kim</string>
+    </dict>
+</dict>
+</plist> 

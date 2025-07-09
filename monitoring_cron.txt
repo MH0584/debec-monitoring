@@ -1,0 +1,2 @@
+# 테스트: 1분마다 서버 모니터링 실행
+* * * * * /Users/minhyo.kim/Downloads/monitoring/ssh-mornitoring/run_with_email.sh >> /Users/minhyo.kim/Downloads/monitoring/ssh-mornitoring/cron.log 2>&1 
