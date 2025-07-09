@@ -42,7 +42,9 @@ def main():
     print(f"[{datetime.now()}] Monitoring scheduler started")
     
     # 매일 9시 20분에 실행
-    schedule.every().day.at("09:20").do(run_monitoring)
+    #schedule.every().day.at("09:20").do(run_monitoring)
+    # 테스트: 매일 14:30(2시 30분)에 실행
+    schedule.every().day.at("14:30").do(run_monitoring)
     
     while True:
         schedule.run_pending()

@@ -11,7 +11,8 @@ while true; do
     current_day=$(date +"%u")  # 1=월요일, 7=일요일
     
     # 평일(월~금) 9시 20분에 실행
-    if [ "$current_time" = "09:20" ] && [ "$current_day" -ge 1 ] && [ "$current_day" -le 5 ]; then
+   #  if [ "$current_time" = "09:20" ] && [ "$current_day" -ge 1 ] && [ "$current_day" -le 5 ]; then
+      if [ "$current_time" = "14:30" ] && [ "$current_day" -ge 1 ] && [ "$current_day" -le 5 ]; then
         echo "[$(date)] Time to run monitoring! (Weekday)" >> "$LOG_FILE"
         
         # 모니터링 스크립트 실행
